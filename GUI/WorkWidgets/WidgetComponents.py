@@ -36,3 +36,9 @@ class ButtonComponent(QtWidgets.QPushButton):
         super().__init__()
         self.setText(text)
         self.setFont(QtGui.QFont("Arial", font_size))
+
+    def disable(self):
+        self.setEnabled(False)
+
+    def enable(self):
+        self.setEnabled(True)
